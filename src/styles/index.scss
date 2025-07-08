@@ -50,7 +50,7 @@ body {
     }
 
     @for $day from 1 to 32 {
-      &.day-#{$day}::before {
+      &:nth-child(#{$day})::before {
         content: '#{$day}';
       }
     }
